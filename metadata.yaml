@@ -15,6 +15,8 @@ creator:
     gutenberg_agent_id: '43372'
     url: http://www.gutenberg.org/2009/agents/43372
 description: ''
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/45592#Reflections-on-the-Rise-and-Fall-of-the-Ancient-RepublicksAdapted-to-the-Present-State-of-Gre_
 gutenberg_issued: '2014-05-05'
 gutenberg_type: Text
 identifiers:
