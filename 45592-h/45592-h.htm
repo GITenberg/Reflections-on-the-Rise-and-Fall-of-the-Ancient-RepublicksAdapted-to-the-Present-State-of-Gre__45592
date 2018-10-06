@@ -2,25 +2,53 @@
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>The Project Gutenberg eBook of Reflections on the Rise and Fall of the Ancient Republicks, by Edward Wortley Montagu</title>
+<link rel="coverpage" href="images/cover.jpg" />
     <style type="text/css">
 
     p {  margin-top: .25em; text-indent: 1em;
          text-align: justify;
-         margin-bottom: .25em;
-         }
-    h1,h2,h3,h4,h5,h6 {
-         text-align: center; /* all headings centered */
+         margin-bottom: .25em;  }
+
+    p.noindent {  margin-top: .25em; text-indent: 0em;
+         text-align: justify;
+         margin-bottom: .25em;  }
+
+    h1 {
+         text-align: center; font-weight: normal;/* all headings centered */
          clear: both;
          }
-    hr { width: 33%;
-    margin-top: 2em;
-    margin-bottom: 2em;
+
+    h2 {
+         text-align: center; font-size: 1.1em; font-weight: normal;/* all headings centered */
+         clear: both;
+         }
+    hr { width: 34%;
+	 margin-top: 2em;
+	 margin-bottom: 2em;
+         margin-left: 33%;
+         margin-right: 33%;
+         clear: both;
+       }
+    hr.margin { width: 20em;; height: 5px;
+	 margin-top: .5em;
+	 margin-bottom: .5em;
          margin-left: auto;
          margin-right: auto;
          clear: both;
        }
+
+    hr.short { width: 20%;
+	 margin-top: 1em;
+	 margin-bottom: 1em;
+         margin-left: 40%;
+         margin-right: 40%;
+
+         clear: both;
+       }
+    .f2  {font-size: 2em;}
+    .f08  {font-size: .8em;}
 
     table {margin-left: auto; margin-right: auto;}
 
@@ -37,33 +65,52 @@
                 font-size: smaller;
                 text-align: right;
               } /* page numbers */
+.lowercase   {text-transform: lowercase;}
+
+@media handheld {.lowercase   {text-transform: lowercase;}}
 
     .smcap    {font-variant: small-caps;}
 
+@media handheld {    .smcap    {font-variant: small-caps;}}
 
-    .footnotes        {border: dashed 1px;}
-    .footnote         {margin-left: 10%; margin-right: 10%; font-size: 0.95em;}
-    .footnote .label  {position: absolute; right: 84%; text-align: right;}
+    .center   { text-align: center; text-indent: 0em;}
+
+    .footnote         {margin-left: 5%; margin-right: 5%; font-size: 0.9em;}
+    .footnote .label  {position: absolute; right: 88%; text-align: right;}
     .fnanchor         {vertical-align: super; font-size: .7em; text-decoration: none;}
 
-    .poem             {margin-left:25%; margin-right:10%; text-align: left; font-size: .9em;}
-    .poem br          {display: none;}
-    .poem .stanza     {margin: 1em 0em 1em 0em;}
-    .poem span.i0     {display: block; margin-left: 0em; padding-left: 3em; text-indent: -3em;}
-    .poem span.i2     {display: block; margin-left: 2em; padding-left: 3em; text-indent: -3em;}
-    .poem span.i3     {display: block; margin-left: 3em; padding-left: 3em; text-indent: -3em;}
-    .poem span.i10    {display: block; margin-left: 10em; padding-left: 3em; text-indent: -3em;}
+.poetry-container
+    {
+  text-align: center;
+  font-size: 90%;
+}
 
-    .poem0             {margin-left:10%; margin-right:10%; text-align: left;}
-    .poem br           {display: none;}
-    .poem0 .stanza     {margin: 1em 0em 1em 0em;}
-    .poem0 span.i0     {display: block; margin-left: 0em; padding-left: 3em; text-indent: -3em;}
-    .poem0 span.i2     {display: block; margin-left: 2em; padding-left: 3em; text-indent: -3em;}
-    .poem0 span.i3     {display: block; margin-left: 3em; padding-left: 3em; text-indent: -3em;}
-    .poem0 span.i10     {display: block; margin-left: 10em; padding-left: 3em; text-indent: -3em;}
-    .poem0 span.i5     {display: block; margin-left: 5em; padding-left: 3em; text-indent: -3em;}
+.poetry
+  {
+  display: inline-block;
+  text-align: left;
+  }
 
-    hr.full { width: 100%;
+.poetry .stanza
+{
+  margin: 0em 0em 0em 0em;
+}
+
+.poetry .line
+{
+  margin: 0;
+  text-indent: -3em;
+  padding-left: 3em;
+}
+.poetry .i10     {margin-left: 10em;}
+.poetry .i2     {margin-left: 2em;}
+.poetry .i3     {margin-left: 3em;}
+.poetry .i5     {margin-left: 5em;}
+
+      h4     { text-align: center;
+               clear: both; }
+      h1.pg  { font-weight: bold; }
+      hr.full { width: 100%;
               margin-top: 3em;
               margin-bottom: 0em;
               margin-left: auto;
@@ -76,20 +123,21 @@
     </style>
 </head>
 <body>
-<h1>The Project Gutenberg eBook, Reflections on the Rise and Fall of the
+<h1 class="pg">The Project Gutenberg eBook, Reflections on the Rise and Fall of the
 Ancient Republicks, by Edward Wortley Montagu</h1>
-<p>This eBook is for the use of anyone anywhere at no cost and with
+<p class="noindent">This eBook is for the use of anyone anywhere at no cost and with
 almost no restrictions whatsoever.  You may copy it, give it away or
 re-use it under the terms of the Project Gutenberg License included
 with this eBook or online at <a
 href="http://www.gutenberg.org">www.gutenberg.org</a></p>
-<p>Title: Reflections on the Rise and Fall of the Ancient Republicks</p>
-<p>       Adapted to the Present State of Great Britain</p>
-<p>Author: Edward Wortley Montagu</p>
-<p>Release Date: May 5, 2014  [eBook #45592]</p>
-<p>Language: English</p>
-<p>Character set encoding: ISO-8859-1</p>
-<p>***START OF THE PROJECT GUTENBERG EBOOK REFLECTIONS ON THE RISE AND FALL OF THE ANCIENT REPUBLICKS***</p>
+<p class="noindent">Title: Reflections on the Rise and Fall of the Ancient Republicks</p>
+<p class="noindent">       Adapted to the Present State of Great Britain</p>
+<p class="noindent">Author: Edward Wortley Montagu</p>
+<p class="noindent">Release Date: May 5, 2014  [eBook #45592]<br />
+HTML version most recently updated: September 20, 2014</p>
+<p class="noindent">Language: English</p>
+<p class="noindent">Character set encoding: UTF-8</p>
+<p class="noindent">***START OF THE PROJECT GUTENBERG EBOOK REFLECTIONS ON THE RISE AND FALL OF THE ANCIENT REPUBLICKS***</p>
 <p>&nbsp;</p>
 <h4>E-text prepared by Turgut Dincer, Jeff G.,<br />
     and the Online Distributed Proofreading Team<br />
@@ -116,52 +164,49 @@ href="http://www.gutenberg.org">www.gutenberg.org</a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+<h1>REFLECTIONS<br />
 
-<h1>REFLECTIONS</h1>
+<small><small><small><small>ON THE</small></small></small></small><br />
 
-<h5>ON THE</h5>
+<small>RISE AND FALL</small><br />
 
-<h3>RISE AND FALL</h3>
+<small><small><small><small>OF THE</small></small></small></small><br />
 
-<h5>OF THE</h5>
+<small>ANCIENT REPUBLICKS.</small></h1>
 
-<h2>ANCIENT REPUBLICKS.</h2>
+<p class="center"><small>ADAPTED TO THE</small><br /><br />
 
-<h5>ADAPTED TO THE</h5>
+<big>PRESENT STATE</big><br /><br />
 
-<h3>PRESENT STATE</h3>
+<small>OF</small><br /><br />
 
-<h5>OF</h5>
+<big><i>GREAT BRITAIN</i>.</big><br /><br /></p>
 
-<h3><i>GREAT BRITAIN</i>.</h3>
+<hr class="margin" />
 
-<hr />
-
-<div class="poem">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">&#927;&#8016; &#964;&#8055; &#964;&#8183;&#948;&#949;, &#7970; &#964;&#8183;&#948;&#949; &#948;&#8057;&#958;&#949;&#953; &#955;&#959;&#947;&#953;&#950;&#8057;&#956;&#949;&#957;&#959;&#962;</span>
-<span class="i0">&#7944;&#955;&#955;&#8048; &#964;&#8055; &#960;&#8051;&#960;&#961;&#945;&#954;&#964;&#945;&#953; &#955;&#8051;&#947;&#969;&#957;.</span>
-<span class="i10">Lucian. Histor. Scribend.</span>
-</div>
-</div>
+<div class="line i2">Οὐ τί τῷδε, ἢ τῷδε δόξει λογιζόμενος</div>
+<div class="line i2">Ἀλλὰ τί πέπρακται λέγων.</div>
+<div class="line i10">Lucian. Histor. Scribend.</div>
+</div></div></div>
+
+<hr class="margin" />
+
+<p class="center"><br /><i>BY EDWARD W. MONTAGU, JUN.</i><br /><br /></p>
+
+<hr class="short" />
+
+<p class="center"><br /><i>PHILADELPHIA</i>:<br />
+
+<small>PRINTED AND PUBLISHED BY C. P. WAYNE.</small><br />
+
+1806.</p>
 
 <hr />
 
-<h3><i>BY EDWARD W. MONTAGU, JUN.</i></h3>
-
-<hr />
-
-<h4><i>PHILADELPHIA</i>:</h4>
-
-<h5>PRINTED AND PUBLISHED BY C. P. WAYNE.</h5>
-
-<hr />
-
-<h5>1806.</h5>
-
-<hr />
-
-<h3>CONTENTS.</h3>
+<h2>CONTENTS.</h2>
 
 <table summary="TOC" border="0">
 <tr>
@@ -170,52 +215,52 @@ href="http://www.gutenberg.org">www.gutenberg.org</a></p>
 <td class="left">&nbsp;</td>
 <td class="right">Page.</td>
 </tr><tr>
-<td class="left" colspan="3"><span class="smcap">Preface,</span></td>
+<td class="left" colspan="3"><span class="smcap lowercase">PREFACE,</span></td>
 <td class="right"><a href="#Page_i">i</a></td>
 </tr><tr>
-<td class="left" colspan="3"><span class="smcap">introduction,</span></td>
+<td class="left" colspan="3"><span class="smcap lowercase">INTRODUCTION,</span></td>
 <td class="right"><a href="#Page_vii">vii</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. i.</span></td>
-<td class="left"><span class="smcap">of the republick</span></td>
-<td class="left"><span class="smcap">of sparta</span></td>
+<td class="left"><span class="smcap lowercase">CHAP. I.</span></td>
+<td class="left"><span class="smcap lowercase">OF THE REPUBLICK</span></td>
+<td class="left"><span class="smcap lowercase">OF SPARTA</span></td>
 <td class="right"><a href="#Page_1">1</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. ii.</span></td>
+<td class="left"><span class="smcap lowercase">CHAP. II.</span></td>
 <td class="left">&nbsp;</td>
-<td class="left"><span class="smcap">of athens</span></td>
+<td class="left"><span class="smcap lowercase">OF ATHENS</span></td>
 <td class="right"><a href="#Page_54">54</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. iii.</span></td>
+<td class="left"><span class="smcap lowercase">CHAP. III.</span></td>
 <td class="left">&nbsp;</td>
-<td class="left"><span class="smcap">of thebes</span></td>
+<td class="left"><span class="smcap lowercase">OF THEBES</span></td>
 <td class="right"><a href="#Page_127">127</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. iv.</span></td>
+<td class="left"><span class="smcap lowercase">chap. iv.</span></td>
 <td class="left">&nbsp;</td>
-<td class="left"><span class="smcap">of carthage</span></td>
+<td class="left"><span class="smcap lowercase">OF CARTHAGE</span></td>
 <td class="right"><a href="#Page_144">144</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. v.</span></td>
+<td class="left"><span class="smcap lowercase">chap. v.</span></td>
 <td class="left">&nbsp;</td>
-<td class="left"><span class="smcap">of rome</span></td>
+<td class="left"><span class="smcap lowercase">OF ROME</span></td>
 <td class="right"><a href="#Page_184">184</a></td>
 </tr><tr>
 <td class="left"><span class="smcap">chap. vi.</span></td>
-<td class="left" colspan="2"><span class="smcap">of the real cause of the rapid<br />
-declension of the roman<br />republick</span></td>
+<td class="left" colspan="2"><span class="smcap lowercase">OF THE REAL CAUSE OF THE RAPID<br />
+DECLENSION OF THE ROMAN<br />REPUBLICK</span></td>
 <td class="right"><a href="#Page_249">249</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. vii.</span></td>
-<td class="left" colspan="2"><span class="smcap">carthaginians and romans<br />
+<td class="left"><span class="smcap lowercase">CHAP. VII.</span></td>
+<td class="left" colspan="2"><span class="smcap lowercase">CARTHAGINIANS AND ROMANS<br />
 compared</span></td>
 <td class="right"><a href="#Page_270">270</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. viii.</span></td>
-<td class="left" colspan="2"><span class="smcap">of revolutions in mixed<br />governments</span></td>
+<td class="left"><span class="smcap lowercase">CHAP. VIII.</span></td>
+<td class="left" colspan="2"><span class="smcap lowercase">OF REVOLUTIONS IN MIXED<br />GOVERNMENTS</span></td>
 <td class="right"><a href="#Page_311">311</a></td>
 </tr><tr>
-<td class="left"><span class="smcap">chap. ix.</span></td>
+<td class="left"><span class="smcap lowercase">CHAP. IX.</span></td>
 <td class="left" colspan="2"><span class="smcap">of the british constitution</span></td>
 <td class="right"><a href="#Page_322">322</a></td>
 </tr>
@@ -225,9 +270,9 @@ compared</span></td>
 
 <p><span class='pagenum'><a name="Page_i" id="Page_i">i</a></span></p>
 
-<h3>PREFACE</h3>
+<h2>PREFACE</h2>
 
-<p>Plutarch takes notice of a very remarkable law
+<p><span class="smcap">Plutarch</span> takes notice of a very remarkable law
 of Solon&#8217;s,<a name="FNanchor_1" id="FNanchor_1"></a><a href="#Footnote_1" class="fnanchor">1</a> &#8220;which declared every man infamous,
 who, in any sedition or civil dissension in the state,
 should continue neuter, and refuse to side with
@@ -425,9 +470,9 @@ construction, into an inflammatory libel</i>.</p>
 
 <p><span class='pagenum'><a name="Page_vii" id="Page_vii">vii</a></span></p>
 
-<h3>INTRODUCTION.</h3>
+<h2>INTRODUCTION.</h2>
 
-<p>I am not at all surprised at those encomiums which
+<p><span class="smcap">I am</span> not at all surprised at those encomiums which
 the philosophers and poets so lavishly bestow upon
 the pleasures of a country retirement. The profusion
 of varying beauties, which attend the returning
@@ -593,23 +638,23 @@ from the dagger of the assassin.</p>
 
 <p><span class='pagenum'><a name="Page_1" id="Page_1">1</a></span></p>
 
-<h1>REFLECTIONS</h1>
+<p class="center f2">REFLECTIONS</p>
 
-<h5>ON THE</h5>
+<p class="center f08">ON THE</p>
 
-<h3>RISE AND FALL</h3>
+<p class="center">RISE AND FALL</p>
 
-<h5>OF THE</h5>
+<p class="center f08">OF THE</p>
 
-<h3>ANCIENT REPUBLICKS.</h3>
+<p class="center">ANCIENT REPUBLICKS.</p>
 
-<hr />
+<hr class="short"/>
 
-<h4>CHAPTER I.</h4>
+<h2>CHAPTER I.<br /><br />
 
-<h5>OF THE REPUBLICK OF SPARTA.</h5>
+<small>OF THE REPUBLICK OF SPARTA.</small></h2>
 
-<p>All the free states of Greece were at first monarchical,<a name="FNanchor_5" id="FNanchor_5"></a><a href="#Footnote_5" class="fnanchor">5</a>
+<p><span class="smcap">All</span> the free states of Greece were at first monarchical,<a name="FNanchor_5" id="FNanchor_5"></a><a href="#Footnote_5" class="fnanchor">5</a>
 and seem to owe their liberty rather to
 the injudicious oppressions of their respective kings,
 than to any natural propensity in the people to alter
@@ -916,7 +961,7 @@ admirer and advocate with the people.</p>
 us greatly in the dark as to the means by which
 Lycurgus was able to make so bitter a pill, as the
 division of property, go down with the wealthy part
-of his countrymen. They tell us indeed, that he
+of his countrymen. They well us indeed, that he
 carried his point by the gentle method of reasoning
 and persuasion, joined to that religious awe which
 the divine sanction of the oracle impressed so deeply
@@ -2150,21 +2195,22 @@ their manners are depraved, all the laws in the world
 will be insufficient to restrain the excesses of the
 human passions. For as Horace justly observes....</p>
 
-<div class="poem">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0"><i>Quid legis sine moribus</i></span>
-<span class="i1"><i>Van&aelig; proficiunt.</i> Ode 24. lib. 3.</span>
-</div></div>
+<div class="line"><i>Quid legis sine moribus</i></div>
+<div class="line i2"><i>Van&aelig; proficiunt.</i>&nbsp;&nbsp;&nbsp;&nbsp;Ode 24. lib. 3.</div>
+</div></div></div>
 
 <hr />
 
 <p><span class='pagenum'><a name="Page_54" id="Page_54">54</a></span></p>
 
-<h4>CHAPTER II.</h4>
+<h2>CHAPTER II.<br /><br />
 
-<h5>OF ATHENS.</h5>
+<small>OF ATHENS.</small></h2>
 
-<p>The republick of Athens, once the seat of learning
+<p><span class="smcap">The</span> republick of Athens, once the seat of learning
 and eloquence, the school of arts and sciences, and
 the centre of wit, gaiety, and politeness, exhibits a
 strong contrast to that of Sparta, as well in her form
@@ -3375,13 +3421,13 @@ nor unentertaining.</p>
 most useful, or the most destructive to a people.
 The....</p>
 
-<div class="poem">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">... <i>Digito monstrari et dicier hic est</i>;<a name="FNanchor_154" id="FNanchor_154"></a><a href="#Footnote_154" class="fnanchor">154</a></span>
-</div>
-</div>
+<div class="line">... <i>Digito monstrari et dicier hic est</i>;<a name="FNanchor_154" id="FNanchor_154"></a><a href="#Footnote_154" class="fnanchor">154</a></div>
+</div></div></div>
 
-<p>the fondness for admiration and applause seems coeval
+<p class="noindent">the fondness for admiration and applause seems coeval
 with man, and accompanies us from the cradle
 to the grave. Every man pants after distinction,
 and even in this world affects a kind of immortality.
@@ -3488,12 +3534,13 @@ was esteemed the utmost summit of human felicity,
 a wreath of wild olive, laurel or parsley (the victor's
 prize) that <i>palma nobilis</i>, as Horace terms it, which</p>
 
-<div class="poem">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0"><i>Terrarum dominos evehit ad Deos</i>,</span>
-</div></div>
+<div class="line"><i>Terrarum dominos evehit ad Deos</i>,</div>
+</div></div></div>
 
-<p>was infinitely more the object of emulation in those
+<p class="noindent">was infinitely more the object of emulation in those
 generous times, than coronets and garters are of
 modern ambition. Let me add too, that as the former
 were invariably the reward of merit only, they
@@ -4255,11 +4302,11 @@ the manners of that warlike people.</p>
 
 <p><span class='pagenum'><a name="Page_127" id="Page_127">127</a></span></p>
 
-<h4>CHAPTER III.</h4>
+<h2>CHAPTER III.<br /><br />
 
-<h5>OF THEBES.</h5>
+<small>OF THEBES.</small></h2>
 
-<p>The accounts of the earlier ages of this ancient
+<p><span class="smcap">The</span> accounts of the earlier ages of this ancient
 republick are so enveloped in fable, that we must
 rather apply for them to the poets than to the historians.
 Pausanias gives us a list of sixteen kings
@@ -4731,11 +4778,11 @@ the Romans.</p>
 
 <p><span class='pagenum'><a name="Page_144" id="Page_144">144</a></span></p>
 
-<h4>CHAPTER IV.</h4>
+<h2>CHAPTER IV.<br /><br />
 
-<h5>OF CARTHAGE.</h5>
+<small>OF CARTHAGE.</small></h2>
 
-<p>Of all the free states whose memory is preserved
+<p><span class="smcap">Of</span> all the free states whose memory is preserved
 to us in history, Carthage bears the nearest resemblance
 to Britain, both in her commerce, opulence,
 sovereignty of the sea, and her method of carrying on
@@ -5440,7 +5487,7 @@ treated the enemy with contempt, as a people already
 conquered. But Mathos observing the negligence
 and security of Hannibal,<a name="FNanchor_220" id="FNanchor_220"></a><a href="#Footnote_220" class="fnanchor">220</a> and well knowing
 that he had not Hamilcar to deal with, made a sudden
-and resolute sally, forced Hannibal&#8217;s intrenchments,
+and resolute sally, forced Hannibal intrenchments,
 <span class='pagenum'><a name="Page_168" id="Page_168">168</a></span>
 put great numbers of his men to the sword,
 took Hannibal himself, with several other persons
@@ -5909,11 +5956,11 @@ manners of both those nations.</p>
 
 <p><span class='pagenum'><a name="Page_184" id="Page_184">184</a></span></p>
 
-<h4>CHAPTER V.</h4>
+<h2>CHAPTER V.<br /><br />
 
-<h5>OF ROME.</h5>
+<small>OF ROME.</small></h2>
 
-<p>Though there is a concurrence of several causes
+<p><span class="smcap">Though</span> there is a concurrence of several causes
 which bring on the ruin of a state, yet where luxury
 prevails, that parent of all our fantastick imaginary
 wants, ever craving and ever unsatisfied, we may
@@ -7700,12 +7747,12 @@ of the present age.</p>
 
 <p><span class='pagenum'><a name="Page_249" id="Page_249">249</a></span></p>
 
-<h4>CHAPTER VI.</h4>
+<h2>CHAPTER VI.<br /><br />
 
-<h5>THE REAL CAUSE OF THE RAPID DECLENSION OF
-THE ROMAN REPUBLICK.</h5>
+<small>THE REAL CAUSE OF THE RAPID DECLENSION OF
+THE ROMAN REPUBLICK.</small></h2>
 
-<p>Dionysius of Halicarnassus observes,<a name="FNanchor_303" id="FNanchor_303"></a><a href="#Footnote_303" class="fnanchor">303</a> that Romulus
+<p><span class="smcap">Dionysius</span> of Halicarnassus observes,<a name="FNanchor_303" id="FNanchor_303"></a><a href="#Footnote_303" class="fnanchor">303</a> that Romulus
 formed his new government in many respects
 after the model of that of Sparta, which accounts for
 that great resemblance, we evidently meet with
@@ -8149,11 +8196,11 @@ being as a people.</p>
 
 <p><span class='pagenum'><a name="Page_270" id="Page_270">270</a></span></p>
 
-<h4>CHAPTER VII.</h4>
+<h2>CHAPTER VII.<br /><br />
 
-<h5>CARTHAGINIANS AND ROMANS COMPARED.</h5>
+<small>CARTHAGINIANS AND ROMANS COMPARED.</small></h2>
 
-<p>The origin of both these people seems alike to
+<p><span class="smcap">The</span> origin of both these people seems alike to
 have been extremely low. Romulus, according to
 Dionysius of Halicarnassus, could form no more than
 three thousand foot and three hundred horse out of
@@ -9280,11 +9327,11 @@ the most flourishing and best constituted government!...</p>
 
 <p><span class='pagenum'><a name="Page_311" id="Page_311">311</a></span></p>
 
-<h4>CHAPTER IX.</h4>
+<h2>CHAPTER VIII.<br /><br />
 
-<h5>OF REVOLUTIONS IN MIXED GOVERNMENTS.</h5>
+<small>OF REVOLUTIONS IN MIXED GOVERNMENTS.</small></h2>
 
-<p>Polybius remarks,<a name="FNanchor_360" id="FNanchor_360"></a><a href="#Footnote_360" class="fnanchor">360</a> that the best form of government
+<p><span class="smcap">Polybius</span> remarks,<a name="FNanchor_360" id="FNanchor_360"></a><a href="#Footnote_360" class="fnanchor">360</a> that the best form of government
 is that which is composed of a due admixture
 of monarchy, aristocracy and democracy. He
 affirms that his assertion may not only be proved
@@ -9614,11 +9661,11 @@ capable of forming the statesman or the man.</p>
 
 <p><span class='pagenum'><a name="Page_322" id="Page_322">322</a></span></p>
 
-<h4>CHAPTER IX.</h4>
+<h2>CHAPTER IX.<br /><br />
 
-<h5>OF THE BRITISH CONSTITUTION.</h5>
+<small>OF THE BRITISH CONSTITUTION.</small></h2>
 
-<p>Xenophon observes,<a name="FNanchor_365" id="FNanchor_365"></a><a href="#Footnote_365" class="fnanchor">365</a> that if the Athenians, together
+<p><span class="smcap">Xenophon</span> observes,<a name="FNanchor_365" id="FNanchor_365"></a><a href="#Footnote_365" class="fnanchor">365</a> that if the Athenians, together
 with the sovereignty of the seas, had enjoyed
 the advantageous situation of an island, they might
 with great ease have given law to their neighbours.
@@ -10033,8 +10080,9 @@ its destructive views, and the dastardly maxims of
 luxury and effeminancy universally prevail amongst
 us ... such too will soon be the fate of Britain.</p>
 
-<hr style="width: 65%;" />
-<h2><a name="FOOTNOTES" id="FOOTNOTES"></a>FOOTNOTES:</h2>
+<hr />
+
+<h2>FOOTNOTES:</h2>
 
 <div class="footnote"><p><a name="Footnote_1" id="Footnote_1"></a><a href="#FNanchor_1"><span class="label">1</span></a> Plut. in Vit. Solon. &#7940;&#964;&#953;&#956;&#959;&#957;.</p></div>
 
@@ -10051,14 +10099,14 @@ in the beginning of his life.</p></div>
 
 <div class="footnote"><a name="Footnote_7" id="Footnote_7"></a><a href="#FNanchor_7"><span class="label">7</span></a>
 
-<div class="poem">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">&#7948;&#947;&#953;&#948;&#959;&#962; &#947;&#959;&#8166;&#957; &#964;&#959;&#8166; &#946;&#945;&#963;&#953;&#955;&#8051;&#969;&#962;</span>
-<span class="i3">&#7952;&#950;&#951;&#956;&#8055;&#969;&#963;&#945;&#957; &#945;&#8016;&#964;&#8057;&#957;.</span>
-</div>
-</div>
+<div class="line">&#7948;&#947;&#953;&#948;&#959;&#962; &#947;&#959;&#8166;&#957; &#964;&#959;&#8166; &#946;&#945;&#963;&#953;&#955;&#8051;&#969;&#962;</div>
+<div class="line i3">&#7952;&#950;&#951;&#956;&#8055;&#969;&#963;&#945;&#957; &#945;&#8016;&#964;&#8057;&#957;.</div>
+</div></div></div>
 
-<p>Plut. vita Lycur. pag. 46. lit. c. Edit. Xiglandri.</p></div>
+<p class="center">Plut. vita Lycur. pag. 46. lit. c. Edit. Xiglandri.</p></div>
 
 <div class="footnote"><p><a name="Footnote_8" id="Footnote_8"></a><a href="#FNanchor_8"><span class="label">8</span></a> Lycurgus was the first who collected the entire works of
 Homer; which he brought into Greece out of Asia-Minor.</p></div>
@@ -10543,16 +10591,16 @@ et vitiis, p. 1426.</p></div>
 
 <div class="footnote"><a name="Footnote_205" id="Footnote_205"></a><a href="#FNanchor_205"><span class="label">205</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Excudent alii spirantia mollius &aelig;ra:</span>
-<span class="i0">Credo equidem, vivos ducent de marmore vultus.</span>
-<span class="i10">Virg. &AElig;neid. lib. 6.</span>
-<span class="i0">Tu regere imperio populos, Romane, memento</span>
-<span class="i0">(H&aelig; tibi erunt artes) pacique imponere morem</span>
-<span class="i0">Parcere subjectis, &amp;c. Ibid.</span>
-</div>
-</div></div>
+<div class="line">Excudent alii spirantia mollius &aelig;ra:</div>
+<div class="line">Credo equidem, vivos ducent de marmore vultus.</div>
+<div class="line">Virg. &AElig;neid. lib. 6.</div>
+<div class="line">Tu regere imperio populos, Romane, memento</div>
+<div class="line">(H&aelig; tibi erunt artes) pacique imponere morem</div>
+<div class="line">Parcere subjectis, &amp;c. Ibid.</div>
+</div></div></div></div>
 
 <div class="footnote"><p><a name="Footnote_206" id="Footnote_206"></a><a href="#FNanchor_206"><span class="label">206</span></a> Polyb. lib. 1. p. 92...3.</p></div>
 
@@ -10717,7 +10765,7 @@ binding to the Plebeians only. After the abolition of the decemvirate
 the people obtained a law: ... &#8220;that all laws passed in their
 assemblies by tribes should have equal force with those made
 in the assemblies by centuries, and should be equally obligatory
-to all the Romans without distinction.&#8221;</p></div>
+to all the Romans without distinction.</p></div>
 
 <div class="footnote"><p><a name="Footnote_262" id="Footnote_262"></a><a href="#FNanchor_262"><span class="label">262</span></a> The place of election.</p></div>
 
@@ -10831,14 +10879,14 @@ destinatis. Salt. Frag. Orat. Lepid. ad Pleb. p. 160.</p></div>
 
 <div class="footnote"><a name="Footnote_284" id="Footnote_284"></a><a href="#FNanchor_284"><span class="label">284</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Hinc rapti fasces pretio: sectorque favoris</span>
-<span class="i0">Ipse sui populus: lethalisque ambitus urbi</span>
-<span class="i0">Annua venali referens certamina campo.</span>
-<span class="i3">Lucan. Pharsal. lib. 1. Edit. 1506.</span>
-</div>
-</div></div>
+<div class="line">Hinc rapti fasces pretio: sectorque favoris</div>
+<div class="line">Ipse sui populus: lethalisque ambitus urbi</div>
+<div class="line">Annua venali referens certamina campo.</div>
+<div class="line i5">Lucan. Pharsal. lib. 1. Edit. 1506.</div>
+</div></div></div></div>
 
 <div class="footnote"><p><a name="Footnote_285" id="Footnote_285"></a><a href="#FNanchor_285"><span class="label">285</span></a> Mala sua, quod malorum ultimum est, amant ... et definit esse
 remedio locus, ubi qu&aelig; fuerant vitia, mores sunt. Senec. Ep.
@@ -10866,19 +10914,19 @@ neque alios pati. Sall. Frag. pag. 139.</p></div>
 
 <div class="footnote"><a name="Footnote_292" id="Footnote_292"></a><a href="#FNanchor_292"><span class="label">292</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i5">... Ex quo suffragia nulli</span>
-<span class="i0">Vendimus, effugit Curas. Nam qui dabat olim</span>
-<span class="i0">Imperium, fasces, legiones, omnia, nunc se</span>
-<span class="i0">Continet, atque duas tantum res anxius optat</span>
-<span class="i0">Panem et Circenses.</span>
-<span class="i5">Juv. Sat. 10. lin. 77.</span>
-<span class="i0">&nbsp;</span>
-<span class="i0">Otium cum servitio.</span>
-<span class="i5">Sall. Frag. p. 341.</span>
-</div>
-</div></div>
+<div class="line i5">... Ex quo suffragia nulli</div>
+<div class="line">Vendimus, effugit Curas. Nam qui dabat olim</div>
+<div class="line">Imperium, fasces, legiones, omnia, nunc se</div>
+<div class="line">Continet, atque duas tantum res anxius optat</div>
+<div class="line">Panem et Circenses.</div>
+<div class="line i5">Juv. Sat. 10. lin. 77.</div>
+<div class="line">&nbsp;</div>
+<div class="line">Otium cum servitio.</div>
+<div class="line i5">Sall. Frag. p. 341.</div>
+</div></div></div></div>
 
 <div class="footnote"><p><a name="Footnote_293" id="Footnote_293"></a><a href="#FNanchor_293"><span class="label">293</span></a> Ludi Scenici.</p></div>
 
@@ -10922,20 +10970,20 @@ Tib. c. 37.</p></div>
 
 <div class="footnote"><a name="Footnote_302" id="Footnote_302"></a><a href="#FNanchor_302"><span class="label">302</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Verum equitis quoque jam migravit ab aure voluptas</span>
-<span class="i0">Omnis, ad incertos oculos, et gaudia vana.</span>
-<span class="i10">Hor. epist. 1. lib. 2. lin. 187.</span>
-<span class="i0">&nbsp;</span>
-<span class="i0">Tanto cum strepitu ludi spectantur, et artes,</span>
-<span class="i0">Diviti&aelig;que peregrin&aelig;: quibus oblitus actor</span>
-<span class="i0">Quum stetit in scena, concurrit dextera l&aelig;v&aelig;:</span>
-<span class="i0">Dixit adhuc aliquid? nil sane. Quid placet ergo?</span>
-<span class="i0">Lana Tarentino violas imitata veneno.</span>
-<span class="i10">Ibid. lin. 203.</span>
-</div>
-</div></div>
+<div class="line">Verum equitis quoque jam migravit ab aure voluptas</div>
+<div class="line">Omnis, ad incertos oculos, et gaudia vana.</div>
+<div class="line i10">Hor. epist. 1. lib. 2. lin. 187.</div>
+<div class="line">&nbsp;</div>
+<div class="line">Tanto cum strepitu ludi spectantur, et artes,</div>
+<div class="line">Diviti&aelig;que peregrin&aelig;: quibus oblitus actor</div>
+<div class="line">Quum stetit in scena, concurrit dextera l&aelig;v&aelig;:</div>
+<div class="line">Dixit adhuc aliquid? nil sane. Quid placet ergo?</div>
+<div class="line">Lana Tarentino violas imitata veneno.</div>
+<div class="line i10">Ibid. lin. 203.</div>
+</div></div></div></div>
 
 <div class="footnote"><p><a name="Footnote_303" id="Footnote_303"></a><a href="#FNanchor_303"><span class="label">303</span></a> Dionys. Halicarn. lib. 2. 65.</p></div>
 
@@ -11036,61 +11084,61 @@ of the manners of those philosophers is to be depended
 upon, they seem to have engrossed the <i>name</i> of the <i>sect</i> wholly
 to themselves.</p>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Me pinguem et Nitidum, bene curata cute, vises.</span>
-<span class="i0">Cum ridere voles, <i>Epicuri de Grege porcum</i>.</span>
-<span class="i10">Hor. Epist. 4. lib. 1.</span>
-</div>
-</div></div>
+<div class="line">Me pinguem et Nitidum, bene curata cute, vises.</div>
+<div class="line">Cum ridere voles, <i>Epicuri de Grege porcum</i>.</div>
+<div class="line i10">Hor. Epist. 4. lib. 1.<br /><br /></div>
+</div></div></div></div>
 
 <div class="footnote"><a name="Footnote_315" id="Footnote_315"></a><a href="#FNanchor_315"><span class="label">315</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Omnis, ut est igitur per se natura duabus</span>
-<span class="i0">Consistit rebus; nam corpora sunt et inane.</span>
-<span class="i0">Ergo pr&aelig;ter inane et corpora tertia per se.</span>
-<span class="i0">Nulla potest rerum in numero natura relinqui</span>
-<span class="i0">Nec qu&aelig; sub sensus cadat ullo tempore nostros</span>
-<span class="i0">Nec ratione animi quam quisquam possit apisci.</span>
-</div>
-</div></div>
+<div class="line">Omnis, ut est igitur per se natura duabus</div>
+<div class="line">Consistit rebus; nam corpora sunt et inane.</div>
+<div class="line">Ergo pr&aelig;ter inane et corpora tertia per se.</div>
+<div class="line">Nulla potest rerum in numero natura relinqui</div>
+<div class="line">Nec qu&aelig; sub sensus cadat ullo tempore nostros</div>
+<div class="line">Nec ratione animi quam quisquam possit apisci.<br /><br /></div>
+</div></div></div></div>
 
 <div class="footnote"><a name="Footnote_316" id="Footnote_316"></a><a href="#FNanchor_316"><span class="label">316</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Et nebula ac fumus quoniam discedit in auras;</span>
-<span class="i0">Crede animam quoque diffundi, multoque perire</span>
-<span class="i0">Ocius, et citius dissolvi corpora prima,</span>
-<span class="i0">Cum semel omnibus e membris ablata recessit.</span>
-</div>
-</div></div>
+<div class="line">Et nebula ac fumus quoniam discedit in auras;</div>
+<div class="line">Crede animam quoque diffundi, multoque perire</div>
+<div class="line">Ocius, et citius dissolvi corpora prima,</div>
+<div class="line">Cum semel omnibus e membris ablata recessit.<br /><br /></div>
+</div></div></div></div>
 
 <div class="footnote"><a name="Footnote_317" id="Footnote_317"></a><a href="#FNanchor_317"><span class="label">317</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Et si jam nostro sentit de corpore, postquam</span>
-<span class="i0">Distracta est animi natura, anim&aelig;que potestas:</span>
-<span class="i0">Nil tamen hoc ad nos; qui c&aelig;tu conjugioque</span>
-<span class="i0">Corporis atque anim&aelig; consistimus uniter apti.</span>
-</div>
-</div></div>
+<div class="line">Et si jam nostro sentit de corpore, postquam</div>
+<div class="line">Distracta est animi natura, anim&aelig;que potestas:</div>
+<div class="line">Nil tamen hoc ad nos; qui c&aelig;tu conjugioque</div>
+<div class="line">Corporis atque anim&aelig; consistimus uniter apti.<br /><br /></div>
+</div></div></div></div>
 
 <div class="footnote"><a name="Footnote_318" id="Footnote_318"></a><a href="#FNanchor_318"><span class="label">318</span></a>
 
-<div class="poem0">
+<div class="poetry-container">
+<div class="poetry">
 <div class="stanza">
-<span class="i0">Nil igitur mors est, ad nos neque pertinet hilum,</span>
-<span class="i0">Quandoquidem natura animi mortalis habetur:</span>
-<span class="i0">&mdash;Ubi non erimus: cum corporis atque animai</span>
-<span class="i0">Discidium fuerit, quibus e sumus uniter apti,</span>
-<span class="i0">Scilicet haud nobis quicquam, qui non erimus tum,</span>
-<span class="i0">Accidere omnino poterit, sensumque movere.</span>
-</div>
-</div></div>
+<div class="line">Nil igitur mors est, ad nos neque pertinet hilum,</div>
+<div class="line">Quandoquidem natura animi mortalis habetur:</div>
+<div class="line">&mdash;Ubi non erimus: cum corporis atque animai</div>
+<div class="line">Discidium fuerit, quibus e sumus uniter apti,</div>
+<div class="line">Scilicet haud nobis quicquam, qui non erimus tum,</div>
+<div class="line">Accidere omnino poterit, sensumque movere.<br /><br /></div>
+</div></div></div></div>
 
 <div class="footnote"><p><a name="Footnote_319" id="Footnote_319"></a><a href="#FNanchor_319"><span class="label">319</span></a> Epicurus vero ex animis hominum extraxit radiaitus religionem,
 quum Diis immortalibus et opem et gratiam sustulit.
@@ -11120,7 +11168,7 @@ arises from Tully&#8217;s purpose in writing his works of philosophy;
 which was, not to deliver his own opinion on any point of ethicks
 or metaphysicks; but to explain to his countrymen in the most
 intelligible manner, whatsoever the Greeks had taught concerning them. In the execution of which design, no sect could so
-well serve his turn as the <i>new academy</i>, whose principle it was,
+well serve his turn as the <i>new academ</i>y, whose principle it was,
 <i>not to interfere with their own opinions</i>, &amp;c. But the principal
 difficulty proceeds from the <i>several</i> and <i>various</i> characters he
 <i>sustained</i> in his life and writings; which habituated him to feign
@@ -11454,7 +11502,7 @@ which sat for life, and whose sentence was final without appeal.</p></div>
 
 <div class="footnote"><p><a name="Footnote_366" id="Footnote_366"></a><a href="#FNanchor_366"><span class="label">366</span></a> Esprit des loix, vol. 2. p. 3.</p></div>
 
-<div class="footnote"><p><a name="Footnote_367" id="Footnote_367"></a><a href="#FNanchor_367"><span class="label">367</span></a> The king of Prussia.</p></div>
+<div class="footnote"><p><a name="Footnote_367" id="Footnote_367"></a><a href="#FNanchor_367"><span class="label">367</span></a> The king of Prussia.<br /><br /><br /><br /></p></div>
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
